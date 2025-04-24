@@ -1,22 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media698.css">
     <title>Document</title>
 </head>
+
 <body>
-    <section class="top-check bg-white c-section">
-        <a href="" class="c-link text-dark">skdnlfs</a>
-    </section>
-    <section class="top-check bg-dark">
+    <main class="main">
+        <section class="c-section bg-white top-check participation">
+            <div class="c-container">
+                <h2 class="ticked-title fs-700">
+                    Как<br>
+                    принять<br>
+                    участие?
+                </h2>
+                <ul class="participation-list c-list flow">
+                    <li class="bg-dark">
+                        <h3 class="decorated-title fs-500 lh-300 flex buy">Покупайте</h3>
+                        <p>Совершите покупку любых товаров или услуг на&nbsp;территории&nbsp;РК в&nbsp;период проведения
+                            акции.</p>
+                    </li>
+                    <li class="bg-dark">
+                        <h3 class="decorated-title fs-500 lh-300 flex collect">Собирайте</h3>
+                        <p>Возьмите фискальный чек у&nbsp;продавца и&nbsp;сохраните его до&nbsp;окончания акции.</p>
+                    </li>
+                    <li class="bg-dark">
+                        <h3 class="decorated-title fs-500 lh-300 flex register">Регистрируйте</h3>
+                        <p>Зарегистрируйте номер чека и&nbsp;укажите номер мобильного телефона на&nbsp;странице акции.
+                        </p>
+                    </li>
+                    <li class="bg-dark">
+                        <h3 class="decorated-title fs-500 lh-300 flex win">Выигрывайте</h3>
+                        <p>Каждую неделю разыгрываем 50&nbsp;призов по&nbsp;20&nbsp;000&nbsp;тенге.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="c-section bg-dark top-check dates">
+            <div class="c-container">
+                <h2 class="ticked-title fs-700">
+                    Даты <br>проведения <br>розыгрышей
+                </h2>
+                <ul class="dates-list c-list flow">
+                    <li class="grid">
+                        <time datetime="" class="little-check text-dark center-text grid">
+                            <span class="fs-600">16</span>
+                            <span>мая</span>
+                        </time>
+                        <div class="text-content flow">
+                            <h3 class="fs-500 text-accent title">
+                                1&nbsp;розыгрыш
+                            </h3>
+                            <p class="fs-200 details">
+                                Участвуют чеки зарегистрированные с&nbsp;1.07.2025 по&nbsp;7.07.2025
+                            </p>
+                            <div class="links flex">
+                                <a href="" class="decorated-link c-link fs-200 white">Список участников</a>
+                                <a href="" class="decorated-link c-link fs-200 white">Победители</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="c-section bg-white top-check registration">
+            <div class="c-container">
+                <h2 class="ticked-title fs-700">
+                    Регистрация <br>чека
+                </h2>
+                <div class="info-content">
+                    <div class="iframe-wrapper">
+                        <iframe
+                            src="https://module.sz.kz/promo-registration-form/?lang=ru&phone=&email=&date_birth=&terminal_id=site&FIO=&sex=&promo_type=2&promo_id=107"
+                            allowtransparency="true" class="regis" width="100%" frameborder="0" scrolling="no"
+                            style="overflow: hidden; height: 452px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-section bg-dark top-check faq">
+            <div class="c-container">
+                <h2 class="ticked-title fs-700">
+                    Часто<br>
+                    задаваемые<br>
+                    вопросы
+                </h2>
+            </div>
+            <div class="accordeon">
+                <div class="accordeon__item">
+                    <details class="accordeon__details bg-dark" name="faq">
+                        <summary class="accordeon__summary grid click bg-white">
+                            <span class="accordeon__title" role="term" aria-details="faq-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </span>
+                        </summary>
+                    </details>
+                    <div class="accordeon__content" id="faq-1" role="definition">
+                        <div class="accordeon__content-body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex placeat inventore totam, rem
+                                non labore illo obcaecati sed beatae rerum fuga id nihil tempora iusto minima laboriosam
+                                suscipit eveniet libero.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="test bg-white back"></div>
 
-    </section>
+    </main>
+    <script src="https://static.sz.kz/landings/alladin-iframe/js/iframeResizer.min.js"></script>
+    <script>
+        document.querySelector('.test').addEventListener('click', (evt) => {
+            evt.target.classList.toggle('active');
+            evt.target.classList.toggle('back');
+        })
+        function gotResizeMessage(event) {
+            var matches = document.querySelectorAll("iframe");
+            for (i = 0; i < matches.length; i++) {
+                if (matches[i].contentWindow == event.source) {
+                    matches[i].height = Number(event.data.height);
+                    return 1;
+                }
+            }
+        }
 
-    <!-- <time datetime="" class="little-check grid text-dark center-text">
-        <span class="fs-600">1</span>
-        <span class="fs-400">мая</span>
-    </time> -->
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("message", gotResizeMessage, false);
+        });
+
+        iFrameResize({ log: true })
+    </script>
 </body>
+
 </html>
