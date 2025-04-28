@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <main class="main">
+    <main class="out-of-header">
         <section class="c-section bg-white top-check participation">
             <div class="c-container">
                 <h2 class="ticked-title fs-700">
@@ -94,30 +94,46 @@
                     задаваемые<br>
                     вопросы
                 </h2>
-            </div>
-            <div class="accordeon">
-                <div class="accordeon__item">
-                    <details class="accordeon__details bg-dark" name="faq">
-                        <summary class="accordeon__summary grid click bg-white">
-                            <span class="accordeon__title" role="term" aria-details="faq-1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing.
-                            </span>
-                        </summary>
-                    </details>
-                    <div class="accordeon__content" id="faq-1" role="definition">
-                        <div class="accordeon__content-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex placeat inventore totam, rem
-                                non labore illo obcaecati sed beatae rerum fuga id nihil tempora iusto minima laboriosam
-                                suscipit eveniet libero.
-                            </p>
+                <div class="accordeon flow">
+                    <div class="accordeon__item bg-dark">
+                        <details class="accordeon__details" name="faq">
+                            <summary class="accordeon__summary grid click bg-white">
+                                <span class="accordeon__title" role="term" aria-details="faq-1">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </span>
+                            </summary>
+                        </details>
+                        <div class="accordeon__content" id="faq-1" role="definition">
+                            <div class="accordeon__content-body">
+                                <p>
+                                    Lorem ipsum <button type="button">dolor</button> sit amet consectetur adipisicing elit. Ex placeat inventore totam, rem
+                                    non labore illo obcaecati <a href="#">sed</a> beatae rerum fuga id nihil tempora iusto minima laboriosam
+                                    suscipit eveniet libero.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordeon__item bg-dark">
+                        <details class="accordeon__details bg-dark" name="faq">
+                            <summary class="accordeon__summary grid click bg-white">
+                                <span class="accordeon__title" role="term" aria-details="faq-1">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </span>
+                            </summary>
+                        </details>
+                        <div class="accordeon__content" id="faq-1" role="definition">
+                            <div class="accordeon__content-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex placeat inventore totam, rem
+                                    non labore illo obcaecati sed beatae rerum fuga id nihil tempora iusto minima laboriosam
+                                    suscipit eveniet libero.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="test bg-white back"></div>
-
     </main>
     <script src="https://static.sz.kz/landings/alladin-iframe/js/iframeResizer.min.js"></script>
     <script>
